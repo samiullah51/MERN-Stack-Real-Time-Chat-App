@@ -1,0 +1,28 @@
+.users{
+    background-color: #fff;
+    border-radius: 10px 0 0 10px;
+    margin-top: 15px;
+    padding: 5px;
+    max-height: 40vh;
+overflow-y: scroll;
+margin-bottom: 10px;
+}
+.users h3{
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    position: sticky;
+    top: -5px;
+    background-color: #fff;
+    z-index: 12;
+}
+.users::-webkit-scrollbar{
+    width: 2px;
+}
+.users::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+.users::-webkit-scrollbar-thumb{
+    background-color: #ccc
+}

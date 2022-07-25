@@ -1,0 +1,27 @@
+const express = require("express");
+const app = express();
+const http = require("http");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const { Server } = require("socket.io");
+// cors
+// config dotenv
+app.use(cors());
+dotenv.config();
+const server = http.createServer(app);
+
+const io = new Server(server, {
+  cors: {
+    origin: "http://localhost:3000/",
+  },
+});
+
+// connect to the socket
+// io.on("connection", (socket) => {
+//   console.log(`connected to the clinet ${socket.id}`);
+// });
+
+// Listining to server
+server.listen(process.env.PORT, () => {
+  console.log(`server is running on port ${process.env.PORT}`);
+});
