@@ -5,12 +5,13 @@
  height: 76%;
 overflow-y:scroll;
 scroll-behavior: smooth;
+transition: .3s;
 }
 .msges::-webkit-scrollbar{
-    width: 2px;
+   width: 2px;
 }
 .msges::-webkit-scrollbar-track{
-    background-color: #fff;
+    background-color: transparent;
 
 }
 .msges::-webkit-scrollbar-thumb{
@@ -75,6 +76,7 @@ box-shadow: 10px 11px 5px -10px rgba(0,0,0,0.1);
     justify-content: center;
     flex-direction: column;
 }
+
 .sender .sendAt{
     width: 100px;
     bottom: -5px;
@@ -86,7 +88,7 @@ box-shadow: 10px 11px 5px -10px rgba(0,0,0,0.1);
 }
 .reciever .sendAt{
     width: 100px;
-    bottom: -30px;
+    bottom: -35px;
     position: relative;
     color: rgb(151, 151, 151);
     font-size: 12px;
@@ -98,4 +100,12 @@ box-shadow: 10px 11px 5px -10px rgba(0,0,0,0.1);
     width: 250px;
     height: 300px;
     margin-bottom: 10px;
+}
+/* Dark mode*/
+.msges.darkMode{
+    color: #fff;
+    transition: .3s;
+}
+.msges.darkMode .reciever{
+    color: #000;
 }

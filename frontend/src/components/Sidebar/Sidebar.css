@@ -2,6 +2,16 @@
     padding: 20px;
     width: 30%;
 }
+.users.darkMode{
+    background-color: rgb(75,75,75);
+    border: 1px solid #fff;
+    color: #fff;
+}
+.users.darkMode h3{
+    color: #fff;
+    background-color: rgb(75,75,75);
+
+}
 .sidebar .input{
     background-color: #fff;
 display: flex;

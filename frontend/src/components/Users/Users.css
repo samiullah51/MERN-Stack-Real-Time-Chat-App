@@ -7,6 +7,17 @@
 overflow-y: scroll;
 margin-bottom: 10px;
 }
+.user.darkMode{
+    background-color: rgb(75,75,75);
+    color: #fff;
+    transition: .3s;
+}
+.user.darkMode h3{
+    background-color: rgb(75,75,75);
+}
+.user.darkMode .main:hover{
+    color: #000;
+}
 .users h3{
     width: 100%;
     text-align: center;
@@ -26,3 +37,4 @@ margin-bottom: 10px;
 .users::-webkit-scrollbar-thumb{
     background-color: #ccc
 }
+

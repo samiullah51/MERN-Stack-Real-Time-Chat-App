@@ -10,6 +10,7 @@ function Messages() {
   const [messages, setMessages] = useState([]);
   const scrollRef = useRef();
   const selectedUser = useSelector((state) => state.selectedUser);
+  const darkMode = useSelector((state) => state.darkMode);
 
   //  fetch messages from backend api
   useEffect(() => {
@@ -33,7 +34,7 @@ function Messages() {
   }, []);
 
   return (
-    <div className="msges" ref={scrollRef}>
+    <div className={!darkMode ? "msges" : "msges darkMode"} ref={scrollRef}>
       {currentChat ? (
         <>
           {messages.length > 0 ? (
@@ -57,8 +58,9 @@ function Messages() {
           )}
         </>
       ) : (
+        // https://cdn-icons-png.flaticon.com/512/134/134914.png
         <div className="welcomeChat">
-          <img src="https://zellusmarketing.com/wp-content/uploads/2021/03/Marketing-Chat-gif.gif" />
+          <img src="https://i.gifer.com/ZAbi.gif" />
           <h2>Welcome {user?.username}</h2>
           <p>Click a Conversation to Chat With</p>
         </div>

@@ -1,0 +1,25 @@
+.hompage{
+    position: relative;
+   width: 100%;
+}
+.btn{
+    position: absolute;
+    top: 80px;
+    left: 26%;
+    border: none;
+    outline: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 12;
+    transition: .3s;
+padding: 2px;
+
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn.active{
+    background-color: rgb(75, 75, 75);
+}

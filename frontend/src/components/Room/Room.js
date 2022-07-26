@@ -14,6 +14,9 @@ function Room() {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState("");
   const [chosenEmoji, setChosenEmoji] = useState(null);
+  // Dark mode
+  const darkMode = useSelector((state) => state.darkMode);
+
   // handle new message
   const handleNewMessage = async () => {
     setLoading(true);
@@ -43,7 +46,7 @@ function Room() {
   };
   return (
     <div className="room">
-      <div className="roomContainer">
+      <div className={!darkMode ? "roomContainer" : "roomContainer darkMode"}>
         {/* Room Header */}
         {selectedUser && (
           <div className="roomHeader">

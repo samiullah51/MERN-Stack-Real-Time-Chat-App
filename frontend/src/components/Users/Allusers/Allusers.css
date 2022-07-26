@@ -5,6 +5,10 @@
     width: 100%;
     margin: 5px 0;
     position: relative;
+ 
+}
+.user.darkMode .userConversation:hover{
+    color: #000;
 }
 .userConversation .owner{
     position: absolute;

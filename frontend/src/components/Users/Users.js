@@ -7,6 +7,8 @@ import { Alert } from "@mui/material";
 import { io } from "socket.io-client";
 
 function Users() {
+  const darkMode = useSelector((state) => state.darkMode);
+
   // Get the current user from the redux store
   const user = useSelector((state) => state.user);
   const [conversations, setConversations] = useState([]);
@@ -24,11 +26,11 @@ function Users() {
       });
     };
     getUsers();
-  }, [conversations]);
+  }, []); // Conversation dependency
 
   return (
     <div>
-      <div className="user">
+      <div className={!darkMode ? "user" : "user darkMode"}>
         <h3>Conversations</h3>
         {!conversations?.length > 0 ? (
           <Alert severity="primary">

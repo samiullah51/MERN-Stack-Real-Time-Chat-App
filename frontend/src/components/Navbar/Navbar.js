@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import { LOG_OUT } from "../../redux/user/userAction";
 import "./Navbar.css";
 import LogoutIcon from "@mui/icons-material/Logout";
-import { useEffect } from "react";
 function Navbar() {
+  // Darkmode
+  const darkMode = useSelector((state) => state.darkMode);
+
   // fetch user from redux store
   const user = useSelector((state) => state.user);
 
   const dispatch = useDispatch();
-
   // Hanlde logout
   const handleLogOut = () => {
     dispatch({ type: LOG_OUT });
@@ -17,7 +18,7 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar">
+    <div className={!darkMode ? "navbar" : "navbar darkMode"}>
       <Link to="/">
         <img src="https://i.pinimg.com/564x/9b/f0/d0/9bf0d084963d20b664b5ff32a9c8e271.jpg" />
       </Link>

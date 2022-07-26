@@ -13,6 +13,7 @@ function RegisterPage() {
   const [password, setPassword] = useState("");
   const [cpassword, setCpassword] = useState("");
   const [profile, setProfile] = useState("");
+
   // navigate hook to navigate login page after creating account
   let navigate = useNavigate();
 

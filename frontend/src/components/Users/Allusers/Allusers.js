@@ -9,6 +9,7 @@ function Allusers() {
   const user = useSelector((state) => state.user);
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const darkMode = useSelector((state) => state.darkMode);
 
   //   useEffect to get All users
   useEffect(() => {
@@ -64,7 +65,7 @@ function Allusers() {
 
   return (
     <div>
-      <div className="user">
+      <div className={!darkMode ? "user" : "user darkMode"}>
         <h3>All Users</h3>
         {!loading ? (
           users.map((u) => (

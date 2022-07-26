@@ -10,6 +10,16 @@
     height: 100%;
     background-color: #fff;
     border-radius: 10px;
+    transition: .3s;
+}
+.roomContainer.darkMode{
+    background-color: rgb(75, 75, 75);
+    border: 1px solid #fff;
+}
+.roomContainer.darkMode .roomHeader{
+    background-color: rgb(75, 75, 75);
+    color: #fff;
+    border-bottom: 1px solid #fff;
 }
 .roomHeader{
     width: 100%;

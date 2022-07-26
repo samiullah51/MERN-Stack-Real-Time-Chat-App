@@ -1,4 +1,10 @@
-import { CURRENT_CHAT, LOG_IN, LOG_OUT, SELECT_USER } from "./userAction";
+import {
+  CURRENT_CHAT,
+  DARK_MODE,
+  LOG_IN,
+  LOG_OUT,
+  SELECT_USER,
+} from "./userAction";
 
 // Get the logged in user from the local Storage
 let getUser = () => {
@@ -11,6 +17,7 @@ const initialState = {
   user: getUser(),
   selectedUser: null,
   currentChat: null,
+  darkMode: false,
 };
 
 // userReducer to Dispatch Actions
@@ -36,6 +43,12 @@ export const userReducer = (state = initialState, action) => {
       return {
         ...state,
         currentChat: action.payload,
+      };
+    // Dark mode
+    case DARK_MODE:
+      return {
+        ...state,
+        darkMode: !state.darkMode,
       };
     default:
       return state;
