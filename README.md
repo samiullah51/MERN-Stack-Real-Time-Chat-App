@@ -1,4 +1,4 @@
-# Real-Time-Chat-App using React/Redux + NodeJS/Express + MongoDB
+# Real-Time-Chat-Application using React/Redux + NodeJS/Express + MongoDB
 ## Description
 This is a real time chat app built in react.JS/redux, node.Js and Socket.IO. A user can register and find all the memebers using this chat. If any user want to chat with another user 
 of this application, he/she can simply add him/her to his conversation sections just by clicking on a single user. After adding a user to the conversation section, he/she can 
