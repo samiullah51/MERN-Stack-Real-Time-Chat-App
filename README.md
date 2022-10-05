@@ -6,7 +6,7 @@ start real time chating with him/her.
 ## Frontend Technologies
 I have used one of the most popular framework React.JS as a frontend. For the state management I have used redux.
 ## Backend Technologies
-I have used Node.JS as a backend. Instead if Node.JS, I prefered ExpressJS which is the node.JS framework to handle API's easily as compared to pure Node.JS. JWT(Json Web Token)
+I have used NodeJS as a backend. Instead if Node.JS, I prefered ExpressJS which is the node.JS framework to handle API's easily as compared to pure Node.JS. JWT(Json Web Token)
 is used for authentication.
 
 ## Database
