@@ -17,4 +17,4 @@ To run this app, first of all clone this repository or simply download the zip f
 Make sure you are in the project directory. Then run the command "npm install" to install all the dependencies.
 
 ## Important Note
-If you are facing some issues in the project, then make sure you are using your own links in (.env file). 
+If you are facing some issues in the project then make sure you are using your own links in (.env file). 
