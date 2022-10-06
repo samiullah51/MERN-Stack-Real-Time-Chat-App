@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import "./RegisterPage.css";
 import axios from "axios";
 import { images } from "../images";
+//Toast
 import { ToastContainer, toast } from "react-toastify";
 
 function RegisterPage() {
